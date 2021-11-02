@@ -11,7 +11,7 @@ import SwiftUI
 struct Covid19RapidAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SportsListView()
         }
     }
 }

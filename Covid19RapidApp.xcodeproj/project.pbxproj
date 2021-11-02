@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		844029F0272E851500E7D6D1 /* NSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844029EF272E851500E7D6D1 /* NSURLSession.swift */; };
-		844029FA272ED71400E7D6D1 /* ViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844029F9272ED71400E7D6D1 /* ViewModal.swift */; };
-		844029FC272EDCD800E7D6D1 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844029FB272EDCD800E7D6D1 /* data.swift */; };
+		844029FA272ED71400E7D6D1 /* SportsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844029F9272ED71400E7D6D1 /* SportsListViewModel.swift */; };
+		844029FC272EDCD800E7D6D1 /* SportsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844029FB272EDCD800E7D6D1 /* SportsModel.swift */; };
 		84B8B76C27312F200098BD49 /* oldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8B76B27312F200098BD49 /* oldViewModel.swift */; };
 		84C8E558272AB8B6009C6FEA /* Covid19RapidAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E557272AB8B6009C6FEA /* Covid19RapidAppApp.swift */; };
-		84C8E55A272AB8B6009C6FEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E559272AB8B6009C6FEA /* ContentView.swift */; };
+		84C8E55A272AB8B6009C6FEA /* SportsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E559272AB8B6009C6FEA /* SportsListView.swift */; };
 		84C8E55C272AB8B9009C6FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C8E55B272AB8B9009C6FEA /* Assets.xcassets */; };
 		84C8E55F272AB8B9009C6FEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C8E55E272AB8B9009C6FEA /* Preview Assets.xcassets */; };
 		84C8E56A272ABE9E009C6FEA /* BarChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C8E569272ABE9E009C6FEA /* BarChartCell.swift */; };
@@ -28,12 +28,12 @@
 
 /* Begin PBXFileReference section */
 		844029EF272E851500E7D6D1 /* NSURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSURLSession.swift; sourceTree = "<group>"; };
-		844029F9272ED71400E7D6D1 /* ViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModal.swift; sourceTree = "<group>"; };
-		844029FB272EDCD800E7D6D1 /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		844029F9272ED71400E7D6D1 /* SportsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsListViewModel.swift; sourceTree = "<group>"; };
+		844029FB272EDCD800E7D6D1 /* SportsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsModel.swift; sourceTree = "<group>"; };
 		84B8B76B27312F200098BD49 /* oldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oldViewModel.swift; sourceTree = "<group>"; };
 		84C8E554272AB8B6009C6FEA /* Covid19RapidApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Covid19RapidApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C8E557272AB8B6009C6FEA /* Covid19RapidAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19RapidAppApp.swift; sourceTree = "<group>"; };
-		84C8E559272AB8B6009C6FEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84C8E559272AB8B6009C6FEA /* SportsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsListView.swift; sourceTree = "<group>"; };
 		84C8E55B272AB8B9009C6FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84C8E55E272AB8B9009C6FEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84C8E569272ABE9E009C6FEA /* BarChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartCell.swift; sourceTree = "<group>"; };
@@ -77,8 +77,8 @@
 		84C8E556272AB8B6009C6FEA /* Covid19RapidApp */ = {
 			isa = PBXGroup;
 			children = (
-				84C8E583272AE765009C6FEA /* Modal */,
-				84C8E580272ADF21009C6FEA /* ViewModal */,
+				84C8E583272AE765009C6FEA /* Model */,
+				84C8E580272ADF21009C6FEA /* ViewModel */,
 				84C8E57E272ADF12009C6FEA /* Views */,
 				84C8E567272ABE8B009C6FEA /* Charts */,
 				84C8E557272AB8B6009C6FEA /* Covid19RapidAppApp.swift */,
@@ -132,26 +132,26 @@
 		84C8E57E272ADF12009C6FEA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				84C8E559272AB8B6009C6FEA /* ContentView.swift */,
+				84C8E559272AB8B6009C6FEA /* SportsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		84C8E580272ADF21009C6FEA /* ViewModal */ = {
+		84C8E580272ADF21009C6FEA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				844029F9272ED71400E7D6D1 /* ViewModal.swift */,
+				844029F9272ED71400E7D6D1 /* SportsListViewModel.swift */,
 				84B8B76B27312F200098BD49 /* oldViewModel.swift */,
 			);
-			path = ViewModal;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		84C8E583272AE765009C6FEA /* Modal */ = {
+		84C8E583272AE765009C6FEA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				844029FB272EDCD800E7D6D1 /* data.swift */,
+				844029FB272EDCD800E7D6D1 /* SportsModel.swift */,
 			);
-			path = Modal;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,12 +226,12 @@
 			files = (
 				84C8E575272AC371009C6FEA /* PieChartView.swift in Sources */,
 				84C8E56A272ABE9E009C6FEA /* BarChartCell.swift in Sources */,
-				84C8E55A272AB8B6009C6FEA /* ContentView.swift in Sources */,
+				84C8E55A272AB8B6009C6FEA /* SportsListView.swift in Sources */,
 				84C8E570272ABEF3009C6FEA /* LabelView.swift in Sources */,
 				84C8E572272AC330009C6FEA /* Helpers.swift in Sources */,
-				844029FC272EDCD800E7D6D1 /* data.swift in Sources */,
+				844029FC272EDCD800E7D6D1 /* SportsModel.swift in Sources */,
 				84C8E57B272AC3AD009C6FEA /* PieChartCell.swift in Sources */,
-				844029FA272ED71400E7D6D1 /* ViewModal.swift in Sources */,
+				844029FA272ED71400E7D6D1 /* SportsListViewModel.swift in Sources */,
 				84C8E558272AB8B6009C6FEA /* Covid19RapidAppApp.swift in Sources */,
 				84B8B76C27312F200098BD49 /* oldViewModel.swift in Sources */,
 				84C8E579272AC398009C6FEA /* PieChartHelpers.swift in Sources */,
